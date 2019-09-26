@@ -1,0 +1,44 @@
+{
+  "name": "strawberry/laravel-shopify-webhook-manager",
+  "description": "Manage webhooks for a Laravel Shopify application",
+  "keywords": [
+    "strawberry",
+    "laravel-shopify-webhook-manager"
+  ],
+  "homepage": "https://github.com/strawberry/laravel-shopify-webhook-manager",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sacha Corazzi",
+      "email": "sacha.corazzi@strawberry.co.uk",
+      "homepage": "https://strawberry.co.uk",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "illuminate/support": "~5.8.0|^6.0",
+    "strawberry/shopify": "dev-master"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^3.8"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "psr-4": {
+      "Strawberry\\Shopify\\Webhooks\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Strawberry\\Shopify\\Webhooks\\Tests\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
