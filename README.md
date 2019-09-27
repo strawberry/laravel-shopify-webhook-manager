@@ -2,7 +2,7 @@
 This package creates webhooks on your Shopify store.
 
 ### Installation and usage:
-This package requires Laravel 7.2 and Laravel 5.8 or higher.
+This package requires PHP 7.2 and Laravel 5.8 or higher.
 
 It uses `strawberry/shopify` under the hood – you should pop over to the documentation and set up the Shopify client before registering your webhooks.
 
