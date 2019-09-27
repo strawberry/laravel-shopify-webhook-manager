@@ -34,7 +34,7 @@ class ReplaceMissingWebhooks implements ShouldQueue
     public function handle(): void
     {
         $existing = Collection::wrap($this->shopify->webhooks()->get() ?? [])->map(function ($webhook) {
-           return Str::slug("{$webhook->topic} {$webhook->address}");
+            return Str::slug("{$webhook->topic} {$webhook->address}");
         });
 
         $this->webhooks->reject(function ($webhook) use ($existing) {
