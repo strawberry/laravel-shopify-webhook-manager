@@ -35,7 +35,7 @@ protected function schedule(Schedule $schedule)
 ```
 
 ### The `CheckForMissingWebhooks` Job
-If you just want to check for missing webhooks and have them by your application, you can use the `CheckForMissingWebhooks` job, instead.
+If you just want to check for missing webhooks and have them logged by your application, you can use the `CheckForMissingWebhooks` job, instead.
 
 Each webhook that has been determined missing will be logged to the channel that you define in the package configuration. Out of the box, it will log to the `stack` channel.
 
