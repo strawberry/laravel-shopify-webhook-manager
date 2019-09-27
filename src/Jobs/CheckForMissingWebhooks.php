@@ -41,7 +41,7 @@ class CheckForMissingWebhooks implements ShouldQueue
 
     public function handle(): void
     {
-        $existing = Collection::make($this->shopify->webhooks->get() ?? [])->map(function ($webhook) {
+        $existing = Collection::wrap($this->shopify->webhooks->get() ?? [])->map(function ($webhook) {
             return Str::slug("{$webhook->topic} {$webhook->address}");
         });
 
